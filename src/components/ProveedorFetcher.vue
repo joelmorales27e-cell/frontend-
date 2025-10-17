@@ -4,7 +4,7 @@ import { ref, onMounted, defineProps } from 'vue'
 type Proveedor = { id_proveedor: number; nombre: string }
 
 const props = defineProps<{ url?: string }>()
-const url = props.url ?? 'http://localhost:3000/proveedores'
+const url = props.url ?? 'https://backend-1-0pas.onrender.com/proveedores'
 
 const proveedores = ref<Proveedor[]>([])
 const loading = ref(true)
