@@ -3,22 +3,22 @@ import ProveedorFetcher from './components/ProveedorFetcher.vue'
 </script>
 
 <template>
-  <main>
-    <h1>Ejemplo: Fetch de proveedor</h1>
-    <!-- El componente acepta una prop `url`. Por defecto consulta `/api/proveedor` -->
-    <ProveedorFetcher />
+  <main class="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
+    <div class="container mx-auto px-4 py-12 max-w-4xl">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-slate-900 mb-3 text-balance">
+          Gestión de Proveedores
+        </h1>
+        <p class="text-slate-600 text-lg">
+          Consulta y administra tu lista de proveedores
+        </p>
+      </div>
+      
+      <ProveedorFetcher />
+    </div>
   </main>
 </template>
 
 <style scoped>
-main {
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-  padding: 2rem;
-  max-width: 640px;
-  margin: 0 auto;
-}
-
-h1 {
-  margin-bottom: 1rem;
-}
+/* Tailwind handles all styling */
 </style>
